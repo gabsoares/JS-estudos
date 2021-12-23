@@ -178,7 +178,7 @@ if (birthYearPedro <= 2000) {
 }
 console.log(century);
 
-console.log('*******This is the second code challenge#02*******');
+console.log('*******End of second code challenge#02*******');
 //CODE CHALLENGE#02
 
 // let markHeight = 1.69;
@@ -197,6 +197,135 @@ console.log('*******This is the second code challenge#02*******');
 //     console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
 // }
 
-console.log('*******This is the second code challenge#02*******');
+console.log('*******This is the final of the second code challenge#02*******');
 
 console.log('***Type Conversion and Coercion***');
+
+//**Type Conversion
+const inputYear = "2001"
+//Converting string to a number
+console.log(Number(inputYear), inputYear); // Number, String
+
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas')); //NaN - Not a number
+
+//Converting a number to string
+console.log(String(23), 23); // String, Number
+
+//**Type Coercion
+console.log('I am ' + 23 + ' years old'); //Number automaticcally converted to string
+console.log('23' - '10' - 3); //String automaticcally converted to numbers
+console.log('10' * '2');
+
+/* Explicação em português
+O operador "+" faz os números se converterem em strings, assim são concatenados, porém os outros operadores transformam essas strings em números
+*/
+
+let n = '1' + 1; //Converted to string, result = 11
+console.log(n); // String
+console.log(n = n - 1);  //Result = 10 *Number*
+
+// *----------------------------------------------------------------*
+
+console.log('***Truthy and Falsy Values***');
+
+//5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0)); //False
+console.log(Boolean('')); //False
+console.log(Boolean(undefined)); //True
+console.log(Boolean({})); //True
+console.log(Boolean('Gabriel')); //True
+
+const money = 0; //Aqui como explicado acima, é falso. Logo, quando é falso o else será executado
+if (money) {
+    console.log("Don't spend it all");
+} else {
+    console.log('You should get a job!');
+}
+
+let height;
+if (height) {
+    console.log('Height is defined');
+} else {
+    console.log('Height is UNDEFINED!');
+}
+
+// *----------------------------------------------------------------*
+console.log('***Equality Operators***');
+
+const fantasyAge = 20;
+
+// "==" faz coerção de tipo "===" é um operador de igualdade restrita, precisam ser do mesmo valor e tipo
+if (age === 20) console.log('You just became an adult');
+
+//Receber input do usuário já transformando em número
+// const favouriteNumber = Number(prompt("What's your favourite number?"))
+// console.log(favouriteNumber);
+// console.log(typeof favouriteNumber);
+
+// if (favouriteNumber === 5) {
+//     console.log('Cool, 5 is an amazing number');
+// } else if (favouriteNumber === 13) {
+//     console.log('13 is also a cool number');
+// } else if (favouriteNumber === 20) {
+//     console.log('20 is very cool!');
+// } else {
+//     console.log('Your number is not cool!');
+// }
+
+// if (favouriteNumber !== 5) console.log('Why not 5?');
+
+// *----------------------------------------------------------------*
+
+console.log('***Logical Operators***');
+
+// AND operator "&&" |  OR operator "||"  |  NOT operator "!"
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log('Gabriel is able to drive');
+// } else {
+//     console.log("Gabriel isn't able to drive");
+// }
+
+const isTired = true; //C
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Gabriel is able to drive');
+} else {
+    console.log("Gabriel isn't able to drive");
+}
+// *----------------------------------------------------------------*
+
+console.log('*******This is the second code challenge#03*******');
+
+const averageDolphins = (97 + 112 + 80) / 3;
+const averageKoalas = (109 + 95 + 50) / 3;
+
+
+
+//****TASK 1 and 2 - DONE
+// if (averageDolphins > averageKoalas) {
+//     console.log(`Congratulations, the Dolphins are the big winners!`);
+// } else if (averageDolphins === averageKoalas) {
+//     console.log(`OMG! This is a draw`);
+// } else if (averageKoalas > averageDolphins){
+//     console.log(`Congratulations, the Koalas are the big winners!`);
+// }
+
+//****BONUS 1 and 2 - DONE
+// if (averageDolphins > averageKoalas && averageDolphins >= 100) {
+//     console.log(`Dolphins Win`);
+// } else if (averageDolphins === averageKoalas && averageDolphins >= 100 && averageKoalas >= 100) {
+//     console.log('OMG! This is a DRAW!');
+// } else if (averageKoalas > averageDolphins && averageKoalas >= 100) {
+//     console.log(`Koalas Win`);
+// } else {
+//     console.log(`We don't have a winner today`);
+// }
+
+
+console.log('*******End of second code challenge#03*******')
