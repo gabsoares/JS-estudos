@@ -300,10 +300,10 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 }
 // *----------------------------------------------------------------*
 
-console.log('*******This is the second code challenge#03*******');
+console.log('*******This is the third code challenge#03*******');
 
-const averageDolphins = (97 + 112 + 80) / 3;
-const averageKoalas = (109 + 95 + 50) / 3;
+//const averageDolphins = (97 + 112 + 80) / 3;
+//const averageKoalas = (109 + 95 + 50) / 3;
 
 
 
@@ -328,4 +328,96 @@ const averageKoalas = (109 + 95 + 50) / 3;
 // }
 
 
-console.log('*******End of second code challenge#03*******')
+console.log('*******End of third code challenge#03*******')
+
+// *----------------------------------------------------------------*
+
+console.log('***SWITCH STATEMENT***');
+
+const day = 'monday';
+
+switch (day) {
+    case 'monday':
+        console.log('Today is monday');
+        break;
+    case' tuesday':
+        console.log('Today is tuesday');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Today is fun');
+        break;
+    case 'friday':
+        console.log('This is friday yeey');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend!');
+        break;
+
+    default:
+        console.log('Not a valid days');
+}
+
+//***Same thing that above
+// if (day === 'monday'){
+//     console.log('Today is monday');
+// } else if (day === 'tuesday'){
+//     console.log('Today is tuesday');
+// } else if (day === 'wednesday' || day === 'thursday'){
+//     console.log('Today is fun');
+// } else if (day === 'friday'){
+//     console.log('This is friday yeey');
+// } else if (day === 'saturday' || day === 'sunday'){
+//     console.log('Enjoy the weekend!');
+// } else{
+//     console.log('Not a valid days');
+// }
+
+
+// *----------------------------------------------------------------*
+
+console.log('***CONDITIONAL (TERNARY) OPERATOR');
+
+const myAge = 20;
+
+/*
+SAME THING
+if (myAge >= 18){
+    console.log('I have 18 years or +');
+} else{
+    console.log("I don't have 18 years");
+}
+*/
+
+// myAge >= 18 ? console.log("I have 18 year or +") : console.log("I don't have 18 years");
+
+const drink = myAge >= 18 ? 'wine' : 'water';
+console.log(drink );
+
+let drink2;
+if (myAge >= 18){
+    drink2 = 'wine';
+} else{
+    drink2 = 'water';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${myAge >= 18 ? 'wine' : 'water'}`);
+
+// *----------------------------------------------------------------*
+
+
+console.log('*******Start of code challenge#04*******')
+
+const billValue = 430;
+let tipValue = billValue * 0.15;
+
+
+billValue >=50 && billValue <=300 ? tipValue : tipValue = billValue * 0.20; 
+
+console.log(`The bill's value is ${billValue}, the tip is ${tipValue}, and the final value is ${billValue + tipValue}`);
+
+
+
+console.log('*******End of code challenge#04*******')
